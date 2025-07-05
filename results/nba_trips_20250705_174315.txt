@@ -1,0 +1,679 @@
+NBA TRIP PLANNER RESULTS
+==================================================
+Generated on: 2025-07-05 17:43:15
+
+Total valid trips found: 34
+
+=== 5-NIGHT TRIPS (0 found) ===
+
+  No valid trips found for this length.
+
+=== 4-NIGHT TRIPS (5 found) ===
+
+Trip 1:
+  Direction: SOUTHBOUND
+  Cities: Boston -> New York City -> Washington DC
+  Travel Efficiency: 2 jumps
+  Schedule:
+    Night 1: Celtics vs Miami Heat
+           Date: 2024-12-02
+           Venue: TD Garden
+
+    Night 2: Knicks vs Orlando Magic
+           Date: 2024-12-03
+           Venue: Madison Square Garden (IV)
+
+    Night 3: Nets vs Indiana Pacers
+           Date: 2024-12-04
+           Venue: Barclays Center
+
+    Night 4: Wizards vs Dallas Mavericks
+           Date: 2024-12-05
+           Venue: Capital One Arena
+
+------------------------------
+
+Trip 2:
+  Direction: SOUTHBOUND
+  Cities: New York City -> Philadelphia -> Washington DC
+  Travel Efficiency: 2 jumps
+  Schedule:
+    Night 1: Nets vs Indiana Pacers
+           Date: 2024-12-04
+           Venue: Barclays Center
+
+    Night 2: Knicks vs Charlotte Hornets
+           Date: 2024-12-05
+           Venue: Madison Square Garden (IV)
+
+    Night 3: 76ers vs Orlando Magic
+           Date: 2024-12-06
+           Venue: Wells Fargo Center
+
+    Night 4: Wizards vs Denver Nuggets
+           Date: 2024-12-07
+           Venue: Capital One Arena
+
+------------------------------
+
+Trip 3:
+  Direction: SOUTHBOUND
+  Cities: New York City -> Philadelphia -> Washington DC
+  Travel Efficiency: 2 jumps
+  Schedule:
+    Night 1: Nets vs Dallas Mavericks
+           Date: 2025-03-24
+           Venue: Barclays Center
+
+    Night 2: Knicks vs Dallas Mavericks
+           Date: 2025-03-25
+           Venue: Madison Square Garden (IV)
+
+    Night 3: 76ers vs Wizards
+           Date: 2025-03-26
+           Venue: Wells Fargo Center
+
+    Night 4: Wizards vs Indiana Pacers
+           Date: 2025-03-27
+           Venue: Capital One Arena
+
+------------------------------
+
+Trip 4:
+  Direction: SOUTHBOUND
+  Cities: Boston -> New York City -> Philadelphia -> Washington DC
+  Travel Efficiency: 3 jumps
+  Schedule:
+    Night 1: Celtics vs Miami Heat
+           Date: 2024-12-02
+           Venue: TD Garden
+
+    Night 2: Knicks vs Orlando Magic
+           Date: 2024-12-03
+           Venue: Madison Square Garden (IV)
+
+    Night 3: 76ers vs Orlando Magic
+           Date: 2024-12-04
+           Venue: Wells Fargo Center
+
+    Night 4: Wizards vs Dallas Mavericks
+           Date: 2024-12-05
+           Venue: Capital One Arena
+
+------------------------------
+
+Trip 5:
+  Direction: SOUTHBOUND
+  Cities: Boston -> New York City -> Philadelphia -> Washington DC
+  Travel Efficiency: 3 jumps
+  Schedule:
+    Night 1: Celtics vs Detroit Pistons
+           Date: 2024-12-04
+           Venue: TD Garden
+
+    Night 2: Knicks vs Charlotte Hornets
+           Date: 2024-12-05
+           Venue: Madison Square Garden (IV)
+
+    Night 3: 76ers vs Orlando Magic
+           Date: 2024-12-06
+           Venue: Wells Fargo Center
+
+    Night 4: Wizards vs Denver Nuggets
+           Date: 2024-12-07
+           Venue: Capital One Arena
+
+------------------------------
+
+=== 3-NIGHT TRIPS (29 found) ===
+
+Trip 1:
+  Direction: SOUTHBOUND
+  Cities: New York City -> Washington DC
+  Travel Efficiency: 1 jumps
+  Schedule:
+    Night 1: Knicks vs Cleveland Cavaliers
+           Date: 2024-10-28
+           Venue: Madison Square Garden (IV)
+
+    Night 2: Nets vs Denver Nuggets
+           Date: 2024-10-29
+           Venue: Barclays Center
+
+    Night 3: Wizards vs Atlanta Hawks
+           Date: 2024-10-30
+           Venue: Capital One Arena
+
+------------------------------
+
+Trip 2:
+  Direction: SOUTHBOUND
+  Cities: New York City -> Washington DC
+  Travel Efficiency: 1 jumps
+  Schedule:
+    Night 1: Knicks vs Orlando Magic
+           Date: 2024-12-03
+           Venue: Madison Square Garden (IV)
+
+    Night 2: Nets vs Indiana Pacers
+           Date: 2024-12-04
+           Venue: Barclays Center
+
+    Night 3: Wizards vs Dallas Mavericks
+           Date: 2024-12-05
+           Venue: Capital One Arena
+
+------------------------------
+
+Trip 3:
+  Direction: SOUTHBOUND
+  Cities: New York City -> Washington DC
+  Travel Efficiency: 1 jumps
+  Schedule:
+    Night 1: Knicks vs Dallas Mavericks
+           Date: 2025-03-25
+           Venue: Madison Square Garden (IV)
+
+    Night 2: Nets vs Toronto Raptors
+           Date: 2025-03-26
+           Venue: Barclays Center
+
+    Night 3: Wizards vs Indiana Pacers
+           Date: 2025-03-27
+           Venue: Capital One Arena
+
+------------------------------
+
+Trip 4:
+  Direction: SOUTHBOUND
+  Cities: Boston -> Philadelphia -> Washington DC
+  Travel Efficiency: 2 jumps
+  Schedule:
+    Night 1: Celtics vs Knicks
+           Date: 2024-10-22
+           Venue: TD Garden
+
+    Night 2: 76ers vs Milwaukee Bucks
+           Date: 2024-10-23
+           Venue: Wells Fargo Center
+
+    Night 3: Wizards vs Celtics
+           Date: 2024-10-24
+           Venue: Capital One Arena
+
+------------------------------
+
+Trip 5:
+  Direction: SOUTHBOUND
+  Cities: Boston -> New York City -> Washington DC
+  Travel Efficiency: 2 jumps
+  Schedule:
+    Night 1: Celtics vs Milwaukee Bucks
+           Date: 2024-10-28
+           Venue: TD Garden
+
+    Night 2: Nets vs Denver Nuggets
+           Date: 2024-10-29
+           Venue: Barclays Center
+
+    Night 3: Wizards vs Atlanta Hawks
+           Date: 2024-10-30
+           Venue: Capital One Arena
+
+------------------------------
+
+Trip 6:
+  Direction: SOUTHBOUND
+  Cities: New York City -> Philadelphia -> Washington DC
+  Travel Efficiency: 2 jumps
+  Schedule:
+    Night 1: Knicks vs Orlando Magic
+           Date: 2024-12-03
+           Venue: Madison Square Garden (IV)
+
+    Night 2: 76ers vs Orlando Magic
+           Date: 2024-12-04
+           Venue: Wells Fargo Center
+
+    Night 3: Wizards vs Dallas Mavericks
+           Date: 2024-12-05
+           Venue: Capital One Arena
+
+------------------------------
+
+Trip 7:
+  Direction: SOUTHBOUND
+  Cities: New York City -> Philadelphia -> Washington DC
+  Travel Efficiency: 2 jumps
+  Schedule:
+    Night 1: Knicks vs Charlotte Hornets
+           Date: 2024-12-05
+           Venue: Madison Square Garden (IV)
+
+    Night 2: 76ers vs Orlando Magic
+           Date: 2024-12-06
+           Venue: Wells Fargo Center
+
+    Night 3: Wizards vs Denver Nuggets
+           Date: 2024-12-07
+           Venue: Capital One Arena
+
+------------------------------
+
+Trip 8:
+  Direction: SOUTHBOUND
+  Cities: Boston -> New York City -> Washington DC
+  Travel Efficiency: 2 jumps
+  Schedule:
+    Night 1: Celtics vs Milwaukee Bucks
+           Date: 2024-12-06
+           Venue: TD Garden
+
+    Night 2: Knicks vs Detroit Pistons
+           Date: 2024-12-07
+           Venue: Madison Square Garden (IV)
+
+    Night 3: Wizards vs Memphis Grizzlies
+           Date: 2024-12-08
+           Venue: Capital One Arena
+
+------------------------------
+
+Trip 9:
+  Direction: SOUTHBOUND
+  Cities: Boston -> Philadelphia -> Washington DC
+  Travel Efficiency: 2 jumps
+  Schedule:
+    Night 1: Celtics vs Houston Rockets
+           Date: 2025-01-27
+           Venue: TD Garden
+
+    Night 2: 76ers vs Los Angeles Lakers
+           Date: 2025-01-28
+           Venue: Wells Fargo Center
+
+    Night 3: Wizards vs Toronto Raptors
+           Date: 2025-01-29
+           Venue: Capital One Arena
+
+------------------------------
+
+Trip 10:
+  Direction: SOUTHBOUND
+  Cities: New York City -> Philadelphia -> Washington DC
+  Travel Efficiency: 2 jumps
+  Schedule:
+    Night 1: Nets vs Sacramento Kings
+           Date: 2025-01-27
+           Venue: Barclays Center
+
+    Night 2: 76ers vs Los Angeles Lakers
+           Date: 2025-01-28
+           Venue: Wells Fargo Center
+
+    Night 3: Wizards vs Toronto Raptors
+           Date: 2025-01-29
+           Venue: Capital One Arena
+
+------------------------------
+
+Trip 11:
+  Direction: SOUTHBOUND
+  Cities: New York City -> Philadelphia -> Washington DC
+  Travel Efficiency: 2 jumps
+  Schedule:
+    Night 1: Knicks vs Memphis Grizzlies
+           Date: 2025-01-27
+           Venue: Madison Square Garden (IV)
+
+    Night 2: 76ers vs Los Angeles Lakers
+           Date: 2025-01-28
+           Venue: Wells Fargo Center
+
+    Night 3: Wizards vs Toronto Raptors
+           Date: 2025-01-29
+           Venue: Capital One Arena
+
+------------------------------
+
+Trip 12:
+  Direction: SOUTHBOUND
+  Cities: Boston -> New York City -> Washington DC
+  Travel Efficiency: 2 jumps
+  Schedule:
+    Night 1: Celtics vs Dallas Mavericks
+           Date: 2025-02-06
+           Venue: TD Garden
+
+    Night 2: Nets vs Miami Heat
+           Date: 2025-02-07
+           Venue: Barclays Center
+
+    Night 3: Wizards vs Atlanta Hawks
+           Date: 2025-02-08
+           Venue: Capital One Arena
+
+------------------------------
+
+Trip 13:
+  Direction: SOUTHBOUND
+  Cities: New York City -> Philadelphia -> Washington DC
+  Travel Efficiency: 2 jumps
+  Schedule:
+    Night 1: Nets vs Charlotte Hornets
+           Date: 2025-02-10
+           Venue: Barclays Center
+
+    Night 2: 76ers vs Toronto Raptors
+           Date: 2025-02-11
+           Venue: Wells Fargo Center
+
+    Night 3: Wizards vs Indiana Pacers
+           Date: 2025-02-12
+           Venue: Capital One Arena
+
+------------------------------
+
+Trip 14:
+  Direction: SOUTHBOUND
+  Cities: New York City -> Philadelphia -> Washington DC
+  Travel Efficiency: 2 jumps
+  Schedule:
+    Night 1: Knicks vs Dallas Mavericks
+           Date: 2025-03-25
+           Venue: Madison Square Garden (IV)
+
+    Night 2: 76ers vs Wizards
+           Date: 2025-03-26
+           Venue: Wells Fargo Center
+
+    Night 3: Wizards vs Indiana Pacers
+           Date: 2025-03-27
+           Venue: Capital One Arena
+
+------------------------------
+
+Trip 15:
+  Direction: NORTHBOUND
+  Cities: Washington DC -> New York City -> Boston
+  Travel Efficiency: 2 jumps
+  Schedule:
+    Night 1: Wizards vs Cleveland Cavaliers
+           Date: 2024-10-26
+           Venue: Capital One Arena
+
+    Night 2: Nets vs Milwaukee Bucks
+           Date: 2024-10-27
+           Venue: Barclays Center
+
+    Night 3: Celtics vs Milwaukee Bucks
+           Date: 2024-10-28
+           Venue: TD Garden
+
+------------------------------
+
+Trip 16:
+  Direction: NORTHBOUND
+  Cities: Washington DC -> New York City -> Boston
+  Travel Efficiency: 2 jumps
+  Schedule:
+    Night 1: Wizards vs Detroit Pistons
+           Date: 2024-11-17
+           Venue: Capital One Arena
+
+    Night 2: Knicks vs Wizards
+           Date: 2024-11-18
+           Venue: Madison Square Garden (IV)
+
+    Night 3: Celtics vs Cleveland Cavaliers
+           Date: 2024-11-19
+           Venue: TD Garden
+
+------------------------------
+
+Trip 17:
+  Direction: NORTHBOUND
+  Cities: Washington DC -> Philadelphia -> New York City
+  Travel Efficiency: 2 jumps
+  Schedule:
+    Night 1: Wizards vs Dallas Mavericks
+           Date: 2024-12-05
+           Venue: Capital One Arena
+
+    Night 2: 76ers vs Orlando Magic
+           Date: 2024-12-06
+           Venue: Wells Fargo Center
+
+    Night 3: Knicks vs Detroit Pistons
+           Date: 2024-12-07
+           Venue: Madison Square Garden (IV)
+
+------------------------------
+
+Trip 18:
+  Direction: NORTHBOUND
+  Cities: Washington DC -> Philadelphia -> Boston
+  Travel Efficiency: 2 jumps
+  Schedule:
+    Night 1: Wizards vs Dallas Mavericks
+           Date: 2024-12-05
+           Venue: Capital One Arena
+
+    Night 2: 76ers vs Orlando Magic
+           Date: 2024-12-06
+           Venue: Wells Fargo Center
+
+    Night 3: Celtics vs Memphis Grizzlies
+           Date: 2024-12-07
+           Venue: TD Garden
+
+------------------------------
+
+Trip 19:
+  Direction: NORTHBOUND
+  Cities: Washington DC -> Philadelphia -> New York City
+  Travel Efficiency: 2 jumps
+  Schedule:
+    Night 1: Wizards vs Charlotte Hornets
+           Date: 2024-12-19
+           Venue: Capital One Arena
+
+    Night 2: 76ers vs Charlotte Hornets
+           Date: 2024-12-20
+           Venue: Wells Fargo Center
+
+    Night 3: Nets vs Utah Jazz
+           Date: 2024-12-21
+           Venue: Barclays Center
+
+------------------------------
+
+Trip 20:
+  Direction: NORTHBOUND
+  Cities: Washington DC -> New York City -> Boston
+  Travel Efficiency: 2 jumps
+  Schedule:
+    Night 1: Wizards vs Phoenix Suns
+           Date: 2025-01-16
+           Venue: Capital One Arena
+
+    Night 2: Knicks vs Minnesota Timberwolves
+           Date: 2025-01-17
+           Venue: Madison Square Garden (IV)
+
+    Night 3: Celtics vs Atlanta Hawks
+           Date: 2025-01-18
+           Venue: TD Garden
+
+------------------------------
+
+Trip 21:
+  Direction: NORTHBOUND
+  Cities: Washington DC -> Philadelphia -> New York City
+  Travel Efficiency: 2 jumps
+  Schedule:
+    Night 1: Wizards vs Los Angeles Lakers
+           Date: 2025-01-30
+           Venue: Capital One Arena
+
+    Night 2: 76ers vs Denver Nuggets
+           Date: 2025-01-31
+           Venue: Wells Fargo Center
+
+    Night 3: Knicks vs Los Angeles Lakers
+           Date: 2025-02-01
+           Venue: Madison Square Garden (IV)
+
+------------------------------
+
+Trip 22:
+  Direction: NORTHBOUND
+  Cities: Washington DC -> Philadelphia -> Boston
+  Travel Efficiency: 2 jumps
+  Schedule:
+    Night 1: Wizards vs San Antonio Spurs
+           Date: 2025-02-10
+           Venue: Capital One Arena
+
+    Night 2: 76ers vs Toronto Raptors
+           Date: 2025-02-11
+           Venue: Wells Fargo Center
+
+    Night 3: Celtics vs San Antonio Spurs
+           Date: 2025-02-12
+           Venue: TD Garden
+
+------------------------------
+
+Trip 23:
+  Direction: NORTHBOUND
+  Cities: Washington DC -> Philadelphia -> New York City
+  Travel Efficiency: 2 jumps
+  Schedule:
+    Night 1: Wizards vs San Antonio Spurs
+           Date: 2025-02-10
+           Venue: Capital One Arena
+
+    Night 2: 76ers vs Toronto Raptors
+           Date: 2025-02-11
+           Venue: Wells Fargo Center
+
+    Night 3: Nets vs 76ers
+           Date: 2025-02-12
+           Venue: Barclays Center
+
+------------------------------
+
+Trip 24:
+  Direction: NORTHBOUND
+  Cities: Washington DC -> Philadelphia -> New York City
+  Travel Efficiency: 2 jumps
+  Schedule:
+    Night 1: Wizards vs San Antonio Spurs
+           Date: 2025-02-10
+           Venue: Capital One Arena
+
+    Night 2: 76ers vs Toronto Raptors
+           Date: 2025-02-11
+           Venue: Wells Fargo Center
+
+    Night 3: Knicks vs Atlanta Hawks
+           Date: 2025-02-12
+           Venue: Madison Square Garden (IV)
+
+------------------------------
+
+Trip 25:
+  Direction: NORTHBOUND
+  Cities: Washington DC -> Philadelphia -> Boston
+  Travel Efficiency: 2 jumps
+  Schedule:
+    Night 1: Wizards vs Milwaukee Bucks
+           Date: 2025-02-21
+           Venue: Capital One Arena
+
+    Night 2: 76ers vs Nets
+           Date: 2025-02-22
+           Venue: Wells Fargo Center
+
+    Night 3: Celtics vs Knicks
+           Date: 2025-02-23
+           Venue: TD Garden
+
+------------------------------
+
+Trip 26:
+  Direction: NORTHBOUND
+  Cities: Washington DC -> New York City -> Boston
+  Travel Efficiency: 2 jumps
+  Schedule:
+    Night 1: Wizards vs Miami Heat
+           Date: 2025-03-31
+           Venue: Capital One Arena
+
+    Night 2: Knicks vs 76ers
+           Date: 2025-04-01
+           Venue: Madison Square Garden (IV)
+
+    Night 3: Celtics vs Miami Heat
+           Date: 2025-04-02
+           Venue: TD Garden
+
+------------------------------
+
+Trip 27:
+  Direction: NORTHBOUND
+  Cities: Washington DC -> New York City -> Boston
+  Travel Efficiency: 2 jumps
+  Schedule:
+    Night 1: Wizards vs Sacramento Kings
+           Date: 2025-04-02
+           Venue: Capital One Arena
+
+    Night 2: Nets vs Minnesota Timberwolves
+           Date: 2025-04-03
+           Venue: Barclays Center
+
+    Night 3: Celtics vs Phoenix Suns
+           Date: 2025-04-04
+           Venue: TD Garden
+
+------------------------------
+
+Trip 28:
+  Direction: NORTHBOUND
+  Cities: Washington DC -> Philadelphia -> Boston
+  Travel Efficiency: 2 jumps
+  Schedule:
+    Night 1: Wizards vs Sacramento Kings
+           Date: 2025-04-02
+           Venue: Capital One Arena
+
+    Night 2: 76ers vs Milwaukee Bucks
+           Date: 2025-04-03
+           Venue: Wells Fargo Center
+
+    Night 3: Celtics vs Phoenix Suns
+           Date: 2025-04-04
+           Venue: TD Garden
+
+------------------------------
+
+Trip 29:
+  Direction: NORTHBOUND
+  Cities: Washington DC -> New York City -> Boston
+  Travel Efficiency: 2 jumps
+  Schedule:
+    Night 1: Wizards vs 76ers
+           Date: 2025-04-09
+           Venue: Capital One Arena
+
+    Night 2: Nets vs Atlanta Hawks
+           Date: 2025-04-10
+           Venue: Barclays Center
+
+    Night 3: Celtics vs Charlotte Hornets
+           Date: 2025-04-11
+           Venue: TD Garden
+
+------------------------------
