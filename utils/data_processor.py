@@ -15,8 +15,11 @@ def load_and_clean_csv(filename):
     # Load CSV using pandas
     df = pd.read_csv(filename)
     
-    # Convert 'Game Date' column to datetime objects
-    df['Game Date'] = pd.to_datetime(df['Game Date'], format='%m/%d/%Y')
+    # Normalize column names to handle different formats
+    df = normalize_column_names(df)
+    
+    # Convert 'Game Date' column to datetime objects (handle different formats)
+    df['Game Date'] = parse_game_dates(df['Game Date'])
     
     # Standardize team names (map full names to short names)
     df['Home'] = df['Home'].apply(standardize_team_names)
@@ -33,22 +36,91 @@ def load_and_clean_csv(filename):
     
     return df
 
+def normalize_column_names(df):
+    """
+    Normalize column names to handle different CSV formats.
+    
+    Args:
+        df (pandas.DataFrame): Raw DataFrame from CSV
+        
+    Returns:
+        pandas.DataFrame: DataFrame with normalized column names
+    """
+    # Create column mapping for different formats
+    column_mapping = {
+        'Start (ET)': 'Game Time',
+        'Visitor/Neutral': 'Visitor', 
+        'Home/Neutral': 'Home'
+    }
+    
+    # Rename columns if they exist
+    df = df.rename(columns=column_mapping)
+    
+    return df
+
+def parse_game_dates(date_series):
+    """
+    Parse game dates handling different date formats.
+    
+    Args:
+        date_series (pandas.Series): Series containing date strings
+        
+    Returns:
+        pandas.Series: Series with parsed datetime objects
+    """
+    # Try different date formats
+    formats_to_try = [
+        '%m/%d/%Y',  # 2024 format: "10/22/2024"
+        '%a, %b %d, %Y'  # 2025 format: "Wed, Oct 22, 2025"
+    ]
+    
+    # First check a sample to determine format
+    sample_date = str(date_series.iloc[0]).strip('"')
+    
+    for fmt in formats_to_try:
+        try:
+            # Test with first date
+            datetime.strptime(sample_date, fmt)
+            # If successful, apply to whole series
+            return pd.to_datetime(date_series.str.strip('"'), format=fmt)
+        except ValueError:
+            continue
+    
+    # If no format worked, try pandas auto-detection
+    try:
+        return pd.to_datetime(date_series.str.strip('"'))
+    except Exception as e:
+        raise ValueError(f"Could not parse dates. Sample: {sample_date}. Error: {e}")
+
 def standardize_team_names(team_name):
     """
     Convert full team names to standardized short names.
     
     Args:
-        team_name (str): Full team name (e.g., "Boston Celtics")
+        team_name (str): Full team name (e.g., "Boston Celtics") or city name (e.g., "Boston")
         
     Returns:
         str: Standardized short name (e.g., "Celtics")
     """
     team_mapping = {
+        # Full team names (2024 format)
         "Boston Celtics": "Celtics",
         "Philadelphia 76ers": "76ers", 
         "New York Knicks": "Knicks",
         "Brooklyn Nets": "Nets",
-        "Washington Wizards": "Wizards"
+        "Washington Wizards": "Wizards",
+        # City names (2025 format)
+        "Boston": "Celtics",
+        "Philadelphia": "76ers",
+        "New York": "Knicks", 
+        "Brooklyn": "Nets",
+        "Washington": "Wizards",
+        # Already standardized names (pass through)
+        "Celtics": "Celtics",
+        "76ers": "76ers",
+        "Knicks": "Knicks",
+        "Nets": "Nets", 
+        "Wizards": "Wizards"
     }
     
     return team_mapping.get(team_name, team_name)

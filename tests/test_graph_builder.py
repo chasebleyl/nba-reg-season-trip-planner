@@ -5,7 +5,7 @@ Test script for graph_builder.py functionality using pytest
 
 import pytest
 import pandas as pd
-from graph_builder import build_game_graph, GameNode, is_consecutive_night, is_valid_geographic_transition, get_team_geographic_order
+from utils.graph_builder import build_game_graph, GameNode, is_consecutive_night, is_valid_geographic_transition, get_team_geographic_order
 
 @pytest.fixture
 def sample_df():

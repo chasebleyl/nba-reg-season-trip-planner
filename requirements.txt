@@ -1,4 +1,7 @@
 pandas>=2.0.0
 networkx>=3.0
 datetime
+pdfplumber>=0.11.7
+pypdf2>=3.0.1
+pymupdf>=1.26.3
 pytest>=7.0.0

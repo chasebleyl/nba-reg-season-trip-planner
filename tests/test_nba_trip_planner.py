@@ -7,14 +7,17 @@ import pytest
 import pandas as pd
 import os
 from datetime import datetime
-from data_processor import load_and_clean_csv
-from graph_builder import build_game_graph
+from utils.data_processor import load_and_clean_csv
+from utils.graph_builder import build_game_graph
+import sys
+import os
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from nba_trip_planner import find_all_valid_trips, rank_trips, format_output, calculate_travel_efficiency
 
 @pytest.fixture
 def processed_data():
     """Load and process the NBA data once for all tests"""
-    return load_and_clean_csv('2024_nba_data.csv')
+    return load_and_clean_csv('data/csv/2024_nba_data.csv')
 
 @pytest.fixture
 def game_graph(processed_data):
@@ -177,7 +180,7 @@ def test_zero_five_night_trips():
 def test_travel_efficiency_calculation():
     """Test travel efficiency calculation"""
     # Create mock trips to test efficiency calculation
-    from graph_builder import GameNode
+    from utils.graph_builder import GameNode
     
     # Test trip with 2 jumps: Wizards -> 76ers -> Celtics
     trip1 = [
@@ -197,4 +200,54 @@ def test_travel_efficiency_calculation():
     efficiency2 = calculate_travel_efficiency(trip2)
     
     assert efficiency1 == 2, f"Expected 2 jumps, got {efficiency1}"
-    assert efficiency2 == 1, f"Expected 1 jump, got {efficiency2}" 
+    assert efficiency2 == 1, f"Expected 1 jump, got {efficiency2}"
+
+def test_2025_format_integration():
+    """Test complete pipeline with 2025 format CSV data"""
+    # Load and process 2025 data
+    processed_data_2025 = load_and_clean_csv('data/csv/2025_nba_data.csv')
+    
+    # Verify basic structure for 2025 data
+    assert len(processed_data_2025) > 0, "2025 DataFrame should not be empty"
+    assert 'Home' in processed_data_2025.columns, "Home column should exist in 2025 data"
+    assert 'Game Date' in processed_data_2025.columns, "Game Date column should exist in 2025 data"
+    
+    # Verify target teams
+    target_teams = {"Wizards", "76ers", "Knicks", "Nets", "Celtics"}
+    actual_teams = set(processed_data_2025['Home'].unique())
+    assert actual_teams == target_teams, f"Expected {target_teams}, got {actual_teams}"
+    
+    # Verify dates are in 2025+ range
+    min_year = processed_data_2025['Game Date'].dt.year.min()
+    assert min_year >= 2025, f"2025 data should have years >= 2025, got {min_year}"
+    
+    # Build graph with 2025 data
+    game_graph_2025 = build_game_graph(processed_data_2025)
+    assert game_graph_2025.number_of_nodes() > 0, "2025 graph has no nodes"
+    assert game_graph_2025.number_of_edges() > 0, "2025 graph has no edges"
+    
+    # Find trips with 2025 data
+    all_trips_2025 = find_all_valid_trips(game_graph_2025)
+    assert len(all_trips_2025) > 0, "Should find valid trips in 2025 data"
+    
+    # Verify all trips include Wizards
+    for trip in all_trips_2025:
+        wizards_in_trip = any(node.team == "Wizards" for node in trip)
+        assert wizards_in_trip, "All trips should include Wizards"
+    
+    # Rank trips
+    ranked_trips_2025 = rank_trips(all_trips_2025)
+    
+    # Verify ranking structure
+    for length in [3, 4]:  # Only check lengths that should have trips
+        assert length in ranked_trips_2025, f"Length {length} should be in ranking"
+        assert isinstance(ranked_trips_2025[length], list), f"Length {length} should map to list"
+    
+    # Check that we have at least some trips
+    total_trips = sum(len(trips) for trips in ranked_trips_2025.values())
+    assert total_trips > 0, "Should have some trips in ranking"
+    
+    # Test output formatting
+    output_2025 = format_output(ranked_trips_2025)
+    assert "NBA TRIP PLANNER RESULTS" in output_2025, "Output should contain header"
+    assert "Total valid trips found:" in output_2025, "Output should contain trip count" 

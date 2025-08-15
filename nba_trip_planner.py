@@ -1,8 +1,9 @@
 import networkx as nx
 import os
+import sys
 from datetime import datetime
-from data_processor import load_and_clean_csv
-from graph_builder import build_game_graph
+from utils.data_processor import load_and_clean_csv
+from utils.graph_builder import build_game_graph
 
 def find_all_valid_trips(graph):
     """
@@ -259,12 +260,37 @@ def main():
     """
     Main execution function for NBA trip planner.
     """
-    print("NBA Trip Planner - Loading and processing data...")
+    # Check for command line argument
+    if len(sys.argv) < 2:
+        print("Usage: python nba_trip_planner.py <csv_filename>")
+        print("Example: python nba_trip_planner.py 2025_nba_data.csv")
+        return 1
+    
+    csv_filename = sys.argv[1]
+    
+    # If filename doesn't include path, check in data/csv directory
+    if not os.path.sep in csv_filename:
+        csv_path = os.path.join('data', 'csv', csv_filename)
+    else:
+        csv_path = csv_filename
+    
+    # Check if file exists
+    if not os.path.exists(csv_path):
+        print(f"Error: File '{csv_path}' not found.")
+        print("Available data files:")
+        data_csv_dir = os.path.join('data', 'csv')
+        if os.path.exists(data_csv_dir):
+            for file in os.listdir(data_csv_dir):
+                if file.endswith('.csv'):
+                    print(f"  {file}")
+        return 1
+    
+    print(f"NBA Trip Planner - Loading and processing data from {csv_filename}...")
     
     try:
         # Load and clean data
         print("1. Loading NBA schedule data...")
-        df = load_and_clean_csv('2024_nba_data.csv')
+        df = load_and_clean_csv(csv_path)
         print(f"   Loaded {len(df)} games for target teams")
         
         # Build graph
